@@ -304,7 +304,6 @@ const searchDogName = async (req, res) => {
     return res.status(500).json({ error: 'Something went wrong' });
   }
 
-  // If we do not find something that matches our search, doc will be empty.
   if (!doc) {
     return res.status(404).json({ error: 'No dog found' });
   }
